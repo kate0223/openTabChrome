@@ -1,18 +1,17 @@
 {
-   "manifest_version": 2,
-   
-   "name": "Downloads",
-   "version": "1.0",
-   "description": "Open Downloads List",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "action": {
+      "default_icon": "button.png",
+      "default_title": "Open Downloads"
+   },
+   "description": "Open the Downloads with just one click.",
    "icons": {
       "128": "icon_128.png"
    },
-
-   "browser_action": {
-      "default_icon": "icon_128.png",
-      "default_title": "Open Downloads List"
-   },
-   "background": {
-      "scripts": [ "background.js" ]
-   }
+   "manifest_version": 3,
+   "name": "Button: Downloads 2",
+   "permissions": [ "tabs" ],
+   "version": "1.0.0"
 }
